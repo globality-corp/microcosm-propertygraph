@@ -1,21 +1,19 @@
 """
-Node persistence.
+Node store.
 
 """
 from abc import ABCMeta, abstractmethod
 from itertools import islice
 
-from microcosm.api import binding
 from microcosm_postgres.store import Store
 
 from microcosm_propertgraph.models.node import Node
 
 
-@binding("node_store")
-class NodeStore(Store, metaclass=ABCMeta):
+class NodeStoreBase(Store, metaclass=ABCMeta):
 
     def __init__(self, graph, model_class=Node):
-        super(NodeStore, self).__init__(graph, model_class)
+        super(NodeStoreBase, self).__init__(graph, model_class)
 
     def count(self, **kwargs):
         return sum(1 for n in self.iter_nodes(**kwargs))

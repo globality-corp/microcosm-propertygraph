@@ -1,21 +1,19 @@
 """
-Relationship persistence.
+Relationship store.
 
 """
 from abc import ABCMeta, abstractmethod
 from itertools import islice
 
-from microcosm.api import binding
 from microcosm_postgres.store import Store
 
 from miranda.models.relationship import Relationship
 
 
-@binding("relationship_store")
-class RelationshipStore(Store, metaclass=ABCMeta):
+class RelationshipStoreBase(Store, metaclass=ABCMeta):
 
     def __init__(self, graph, model_class=Relationship):
-        super(RelationshipStore, self).__init__(graph, model_class)
+        super(RelationshipStoreBase, self).__init__(graph, model_class)
         self.assertion_store = graph.assertion_store
         self.inferred_assertion_store = graph.inferred_assertion_store
 
