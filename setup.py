@@ -25,6 +25,10 @@ setup(
     dependency_links=[
     ],
     entry_points={
+        "console_scripts": [
+            "neo4-nodes = micrcosm_propertygraph.neo4j:export_nodes_main",
+            "neo4-relationships = micrcosm_propertygraph.neo4j:export_relationships_main",
+        ],
         "microcosm.factories": [
         ],
     },
