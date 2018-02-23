@@ -6,8 +6,7 @@ from abc import ABCMeta, abstractmethod
 from itertools import islice
 
 from microcosm_postgres.store import Store
-
-from microcosm_propertgraph.models.node import Node
+from microcosm_propertygraph.models.node import Node
 
 
 class NodeStoreBase(Store, metaclass=ABCMeta):

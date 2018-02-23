@@ -6,8 +6,7 @@ from abc import ABCMeta, abstractmethod
 from itertools import islice
 
 from microcosm_postgres.store import Store
-
-from miranda.models.relationship import Relationship
+from microcosm_propertygraph.models.relationship import Relationship
 
 
 class RelationshipStoreBase(Store, metaclass=ABCMeta):
