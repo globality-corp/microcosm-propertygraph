@@ -15,9 +15,9 @@ This is facilitiated by two API endpoints:
 
 ## Usage
 
-To load up assertions into a Neo4j instance, we can use the [Neo4j import](https://neo4j.com/docs/operations-manual/current/tools/import/) functionality to import nodes and relationships from CSV files.
+To load up data into a Neo4j instance, we can use the [Neo4j import](https://neo4j.com/docs/operations-manual/current/tools/import/) functionality to import nodes and relationships from CSV files.
 
-We supply a couple of utility scripts that makes the transformation from the raw API output to required Neo4J import CSV format in [../scripts/](), typical usage would look like this:
+We supply a couple of utility scripts that makes the transformation from the raw API output to required Neo4J import CSV format. Typical usage would look like this:
 
 
 	http 127.0.0.1:5401/api/v1/node |  neo4j-nodes - nodes.csv
