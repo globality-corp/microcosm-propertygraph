@@ -16,11 +16,11 @@ setup(
     zip_safe=False,
     keywords="microcosm",
     install_requires=[
-        "microcosm>=2.0.0",
-        "microcosm-flask>=1.3.0",
+        "microcosm>=2.4.1",
+        "microcosm-flask>=1.10.0",
     ],
     setup_requires=[
-        "nose>=1.3.6",
+        "nose>=1.3.7",
     ],
     dependency_links=[
     ],
@@ -34,7 +34,7 @@ setup(
     },
     tests_require=[
         "coverage>=3.7.1",
-        "mock>=1.0.1",
-        "PyHamcrest>=1.8.5",
+        "mock>=2.0.0",
+        "PyHamcrest>=1.9.0",
     ],
 )
