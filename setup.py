@@ -18,6 +18,7 @@ setup(
     install_requires=[
         "microcosm>=2.4.1",
         "microcosm-flask>=1.10.0",
+        "microcosm-metrics>=2.1.0",
     ],
     setup_requires=[
         "nose>=1.3.7",
