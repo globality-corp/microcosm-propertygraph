@@ -17,7 +17,7 @@ setup(
     python_requires=">=3.6",
     keywords="microcosm",
     install_requires=[
-        "microcosm>=2.4.1",
+        "microcosm>=2.12.0",
         "microcosm-flask>=1.10.0",
     ],
     setup_requires=[
